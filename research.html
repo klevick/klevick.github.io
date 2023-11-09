@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Research</title>
+        <link href="https://fonts.googleapis.com/css?family=Cousine|Karla" 
+rel="stylesheet">
+        
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+            <script 
+src="https://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        
+            :root {
+                --page-width: calc(50%);
+            }
+        
+            body {
+                font-family: 'Karla', sans-serif;
+                font-size: 18px;
+                color: #444;
+            }
+            
+            a, a:active, a:visited {
+                color: #666;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: #444;
+                text-decoration: underline;
+            }
+            
+            h3 {
+                text-shadow: 1px 1px 1px #e0e0e0;
+            }
+            
+            #header {
+                position: sticky;
+                margin-left: calc(50% - 410px);
+                margin-top: 40px;
+                width: 820px;
+                top: 0;
+                background: #fff;
+                z-index: 999;
+                padding: 20px 8px;
+            }
+            
+            #header a#title {
+                text-transform: uppercase;
+                font-size: 20px;
+                text-decoration: none;
+                color: #222;
+                border-bottom: 1px solid #f7a8b8;
+            }
+            
+            #links {
+                float: right;
+                display: inline;
+                text-align: center;
+            }
+            
+            #links a, #links a:active, #links a:visited {
+                margin-left: 8px;
+                border-bottom: 1px solid #f7a8b8;
+                text-transform: lowercase;
+            }
+            
+            #links a:hover {
+                color: #f7a8b8;
+                text-decoration: none;
+            }
+            
+            #links a:before {
+                content: '/';
+                margin-right: 4px;
+            }
+            
+            #content {
+                width: 840px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+            
+            .container {
+                width:700px;
+                margin-left: 70px;
+		margin-bottom: 35px;
+            }
+
+	    .container img {
+		width:100%;
+	    }
+            
+            .date {
+                margin-top: 2px;
+            }
+            
+            .date a, .date a:active, .date a:visited {
+                color: #808080;
+            }
+            
+            .date a:hover {
+                color: #aaa;
+                text-decoration: none;
+            }
+            
+            .meta {
+                margin-top: 20px;
+            }
+            
+            .meta a {
+                margin-right: 8px;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+    
+        <div id="header">
+            <a href="index.html" id="title">Kel Levick</a>
+            <div id="links">
+                <a href="index.html">about</a>
+		<a href="research.html">research</a>
+		<a href="teaching.html">teaching</a>
+		<a href="cv.html">cv</a>
+            </div>
+        </div>
+
+        <div id="content">
+                <div class="container">
+                    <h3>research</h3>
+		<p><b>De novo immunoglobulin gene estimation using de Bruijn graphs</b></p>
+		<img src="de bruijn.png"/>
+		<p>One method for determining the immunoglobulin genes that are present in an individual is to sequence the cDNA that encodes the antibodies from B cells, called <i>antibody repertoire sequencing</i> or Rep-Seq, and infer the IG genes from those reads. In this way, reconstructing different types of IG genes, such as the V, D, and J genes that occur in the IGH locus, from Rep-Seq data is a type of trace reconstruction problem, with errors introduced not only through mutations and indels from VDJ recombination but from sequencing itself as well. De novo reconstruction of D genes is particularly difficult, since they are significantly shorter than other IGH genes and contain a relatively high number of mutations after recombination. I seek to develop a method for <i>k</i>-mer-based D gene discovery using de Bruijn graphs of varying order and to characterize the feasibility of such a method in a setting that is applicable to immunogenomics.</p>
+		<p><b>Multiple sequence reconstruction from <i>k</i>-mers with repeats</b></p>
+		<img src="regions.png"/>
+		<p><I>K</I>-mer based methods appear often in DNA assembly and sequence reconstruction problems. When <I>k</I> is shorter than the sequence read length, the set of <I>k</I>-mers will naturally be larger than the set of reads, allowing greater indel correction precision at the expense of potential repeats. The feasibility of a multiple sequence construction problem (whether a set of reads can be exactly or approximately recovered from the set of its <I>k</I>-mers) is of interest for sets of substrings that do contain repeats.
+		<ul><li>Related work: <a href="https://ieeexplore.ieee.org/document/10206707">"Fundamental Limits of Multiple Sequence Reconstruction from Substrings"</a></li></ul>
+		</p>
+		</div>
+	</div>    
+    </body>
+</html>
